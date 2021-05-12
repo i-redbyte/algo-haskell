@@ -14,6 +14,7 @@ levenshtein s1 s2
                          1 + levenshtein (init s1) (init s2)]
 
 main = do
+    print "Please enter 2 text: "
     text1 <- getLine
     text2 <- getLine
     let dist = levenshtein text1 text2
